@@ -1,0 +1,11 @@
+{
+    "watch": [
+        "app",
+        "server.js"
+    ],
+    "ext": "js",
+    "ignore": [
+        "*.spac.js"
+    ],
+    "exec": "node ./server.js"
+}
