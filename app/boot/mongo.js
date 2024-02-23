@@ -9,7 +9,6 @@ mongoose.connection.on(`error`, (error) => {
 
 const startMongoDB = () => {
     mongoose.connect(`mongodb://${MONGO_HOST}:${MONGO_PORT}/${MONGO_DATABASE}`);
-
 };
 
 module.exports = startMongoDB;

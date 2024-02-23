@@ -1,6 +1,8 @@
-const userRouter = require("./users");
-
+const authRouters =  require("./auth");
+const taskRouter = require("./task");
+const { requireAuth } = require("../middlewares/auth")
 
 module.exports = (app) => {
-    app.use("/user", userRouter);
+    app.use(authRouters);
+    app.use("/task", [requireAuth], taskRouter);
 };
