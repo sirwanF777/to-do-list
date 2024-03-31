@@ -15,7 +15,8 @@ const userSchema = new mongoose.Schema({
         required: [true, "Password is required"],
         validate: [
             isStrongPassword,
-            `The password must have at least 8 characters, one uppercase letter, one lowercase letter, one digit, and one special character.`
+            `The password must have at least 8 characters, one uppercase letter, one lowercase letter, 
+            one digit, and one special character.`
         ]
     },
     tasks_list_id: [
